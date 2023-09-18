@@ -1,0 +1,94 @@
+#$ TITLE: Barracuda Lightswitch V1 2023 Race 6s 5"
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: 6S, race, beginner, 5 inch, 5", viki, 2023, multigp
+#$ AUTHOR: Viki Baarathi
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION:
+#$ DESCRIPTION:
+#$ DESCRIPTION:
+#$ DESCRIPTION: This build is ideal for beginners who are taking up drone racing. Works well with Five33 Lightswitch V1.
+#$ DESCRIPTION: Works well with or without braces.
+#$ DESCRIPTION: Works well with analog or HDZERO
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: 
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: 
+#$ DESCRIPTION: 
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: ## BARRACUDA setup:
+#$ DESCRIPTION: - Five33 LightSwitch V1
+#$ DESCRIPTION: - Five33 Foxeer Predator V5 / HDZERO nano 90
+#$ DESCRIPTION: - Five33 2207 2070KV Champions edition
+#$ DESCRIPTION: - Foxeer F722 V4 (20x20)
+#$ DESCRIPTION: - Foxeer Reaper F4 Slim 60A esc
+#$ DESCRIPTION: - Gemfan MCK 5127
+#$ DESCRIPTION: - Lumenier AXII antenna on quads , Five33 AXII
+#$ DESCRIPTION: - Dogcom MCK 6S 1380mah
+#$ DESCRIPTION: - Rush TinyTank VTX / HDZero Race V2
+
+#$ DESCRIPTION: ## BLHeli32 setting
+#$ DESCRIPTION: Set low and high frequency to 48
+#$ DESCRIPTION: Rampup power 25%
+#$ DESCRIPTION: Motor timing 16 deg
+
+#$ DISCUSSION:
+
+#$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
+#$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
+#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+set motor_pwm_protocol = DSHOT600
+
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 28
+set i_pitch = 55
+set d_pitch = 20
+set f_pitch = 59
+set p_roll = 26
+set i_roll = 52
+set d_roll = 17
+set f_roll = 57
+set p_yaw = 26
+set i_yaw = 52
+set f_yaw = 57
+set d_min_roll = 17
+set d_min_pitch = 20
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 35
+set feedforward_jitter_factor = 4
+set feedforward_boost = 18
+set simplified_master_multiplier = 60
+set simplified_i_gain = 110
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 80
+
+
+#$ OPTION_GROUP BEGIN: Some racing RC_LINK presets
+    #$ OPTION BEGIN (UNCHECKED): 150hz link
+        #$ INCLUDE: presets/4.3/rc_link/generic/150hz_race.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 250hz link
+        #$ INCLUDE: presets/4.3/rc_link/generic/250hz_race.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 500hz link
+        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION BEGIN (UNCHECKED): Rates
+    #$ INCLUDE: presets/4.3/rates/MinChan.txt
+    #$ INCLUDE: presets/4.3/rates/533.txt
+#$ OPTION END
