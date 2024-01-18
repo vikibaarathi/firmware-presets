@@ -7,36 +7,26 @@
 
 #$ PARSER: MARKED
 
-#$ DESCRIPTION:
-#$ DESCRIPTION:
-#$ DESCRIPTION:
 #$ DESCRIPTION: This tune is ideal for beginners who are taking up drone racing. It's light on the motors yet allows for good performance.
-#$ DESCRIPTION: 
-#$ DESCRIPTION: 
-#$ DESCRIPTION:
-#$ DESCRIPTION: 
-#$ DESCRIPTION:
-#$ DESCRIPTION: 
-#$ DESCRIPTION: 
-#$ DESCRIPTION: 
-#$ DESCRIPTION:
-#$ DESCRIPTION: ## Requirements:
-#$ DESCRIPTION: Works with Analog or HDZero
-#$ DESCRIPTION: Stack nuts must be present and tight. The ones below the FC. Some call them the golden nuts or nuts of glory. 
-#$ DESCRIPTION: Motor screws should be tight and arms should be solid and not gummy. 
-#$ DESCRIPTION: 
 
-#$ DESCRIPTION: ## BLHeli32 setting
-#$ DESCRIPTION: Set low and high frequency to 48
-#$ DESCRIPTION: Rampup power 25%
-#$ DESCRIPTION: Motor timing 16 deg
+#$ DESCRIPTION: ### Requirements:
+#$ DESCRIPTION: - Works with Analog or HDZero
+#$ DESCRIPTION: - Stack nuts must be present and tight. The ones below the FC. Some call them the golden nuts or nuts of glory. 
+#$ DESCRIPTION: - Motor screws should be tight and arms should be solid and not gummy. 
+#$ DESCRIPTION: - Requires DSHOT600 and bidirectional DShot enabled.
+
+#$ DESCRIPTION: <br>
+
+#$ DESCRIPTION: ### BLHeli32 setting
+#$ DESCRIPTION: - Set low and high frequency to 48
+#$ DESCRIPTION: - Rampup power 25%
+#$ DESCRIPTION: - Motor timing 16 deg
 
 #$ DISCUSSION:
 
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.3/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
 
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
@@ -63,21 +53,3 @@ set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 80
 
 
-#$ OPTION_GROUP BEGIN: Some racing RC_LINK presets
-    #$ OPTION BEGIN (UNCHECKED): 150hz link
-        #$ INCLUDE: presets/4.3/rc_link/generic/150hz_race.txt
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): 250hz link
-        #$ INCLUDE: presets/4.3/rc_link/generic/250hz_race.txt
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): 500hz link
-        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
-    #$ OPTION END
-#$ OPTION_GROUP END
-
-#$ OPTION BEGIN (UNCHECKED): Rates
-    #$ INCLUDE: presets/4.3/rates/MinChan.txt
-    #$ INCLUDE: presets/4.3/rates/533.txt
-#$ OPTION END
