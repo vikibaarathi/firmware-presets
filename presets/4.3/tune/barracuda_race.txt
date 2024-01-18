@@ -57,4 +57,40 @@ set simplified_i_gain = 110
 set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 80
 
+#$ OPTION_GROUP BEGIN: Choose RC Link
+
+    #$ OPTION BEGIN (CHECKED): Tracer/ELRS 250Hz
+    #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 35
+        set feedforward_jitter_factor = 4
+        set feedforward_boost = 18
+
+        set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
+    #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 65
+        set feedforward_jitter_factor = 3
+        set feedforward_boost = 18
+
+        set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
 
