@@ -20,6 +20,7 @@
 
 #$ DESCRIPTION: ### Recommendation:
 #$ DESCRIPTION: - ExpressLRS 250Hz or ExpressLRS 500Hz
+#$ DESCRIPTION: - Apply Barracuda filters
 
 #$ DESCRIPTION: <br>
 
@@ -93,7 +94,7 @@ set simplified_feedforward_gain = 80
 
 #$ OPTION_GROUP END
 
-#$ OPTION BEGIN (UNCHECKED): Recommended Filters
+#$ OPTION BEGIN (CHECKED): Recommended Barracuda Filters
     #$ INCLUDE: presets/4.3/filters/defaults.txt
 
     set gyro_lpf1_static_hz = 350
