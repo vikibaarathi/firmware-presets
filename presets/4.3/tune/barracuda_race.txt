@@ -18,6 +18,11 @@
 
 #$ DESCRIPTION: <br>
 
+#$ DESCRIPTION: ### Recommendation:
+#$ DESCRIPTION: - ExpressLRS 250Hz or ExpressLRS 500Hz
+
+#$ DESCRIPTION: <br>
+
 #$ DESCRIPTION: ### BLHeli32 setting
 #$ DESCRIPTION: - Set low and high frequency to 48
 #$ DESCRIPTION: - Rampup power 25%
