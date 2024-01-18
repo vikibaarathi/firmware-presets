@@ -204,7 +204,7 @@
       "2.5in",
       "2.5W",
       "2022",
-      "2023",
+      "2024",
       "20ms",
       "2500mW",
       "250Hz",
@@ -3889,10 +3889,10 @@
     },
     {
       "fullPath": "presets/4.4/tune/barracuda_race_5in_6s.txt",
-      "hash": "5b846fc9e1b033e8e2ddbcfe103b9c2b42ba4b2565bd6aa082631459bc8b7023",
-      "title": "Barracuda Lightswitch V1 2023 Race 6s 5\"",
+      "hash": "9419593a09dbf3c7ec2796f51ae29896256f5e5fb28694facf5c324d17b9af71",
+      "title": "Barracuda Racer Tune\"",
       "firmware_version": [
-        "4.4"
+        "4.3"
       ],
       "category": "TUNE",
       "status": "EXPERIMENTAL",
@@ -3903,7 +3903,7 @@
         "5 inch",
         "5\"",
         "viki",
-        "2023",
+        "2024",
         "multigp"
       ],
       "author": "Viki Baarathi",
