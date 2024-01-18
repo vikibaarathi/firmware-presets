@@ -2874,13 +2874,13 @@
     },
     {
       "fullPath": "presets/4.3/tune/barracuda_race.txt",
-      "hash": "146a8aa3d25dde1a36767c8d4cef099525a2ff321616bf0f4494fc171a75de22",
+      "hash": "1eeba7db5f3dadc96437b29d7d2b83f46f70ef99ae03dc26b81eb381e4647570",
       "title": "Barracuda Racer Tune\"",
       "firmware_version": [
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "6S",
         "race",
