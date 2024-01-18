@@ -1,8 +1,8 @@
-#$ TITLE: Barracuda Lightswitch V1 2023 Race 6s 5"
-#$ FIRMWARE_VERSION: 4.4
+#$ TITLE: Barracuda Racer Tune"
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: 6S, race, beginner, 5 inch, 5", viki, 2023, multigp
+#$ KEYWORDS: 6S, race, beginner, 5 inch, 5", viki, 2024, multigp
 #$ AUTHOR: Viki Baarathi
 
 #$ PARSER: MARKED
@@ -10,7 +10,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION:
 #$ DESCRIPTION:
-#$ DESCRIPTION: This build is ideal for beginners who are taking up drone racing. Works well with Five33 Lightswitch V1.
+#$ DESCRIPTION: This tune is ideal for beginners who are taking up drone racing. It's light on the motors yet allows for good performance.
 #$ DESCRIPTION: Works well with or without braces.
 #$ DESCRIPTION: Works well with analog or HDZERO
 #$ DESCRIPTION: <br>
