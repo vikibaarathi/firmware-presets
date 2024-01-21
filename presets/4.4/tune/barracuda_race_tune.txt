@@ -12,9 +12,9 @@
 #$ DESCRIPTION: ### Requirements:
 #$ DESCRIPTION: - 5 inch race quads with 6S packs.
 #$ DESCRIPTION: - Works with Analog or HDZero
+#$ DESCRIPTION: - DSHOT600 with bidirectional DSHOT enabled. This is very important.
 #$ DESCRIPTION: - Stack nuts must be present and tight. The ones below the FC. Some call them the golden nuts or nuts of glory. 
 #$ DESCRIPTION: - Motor screws should be tight and arms should be solid and not gummy. 
-#$ DESCRIPTION: - Requires DSHOT600 and bidirectional DShot enabled. Check the motor tab after installing this preset to make sure everything enabled accordingly.
 
 #$ DESCRIPTION: <br>
 
@@ -31,7 +31,7 @@
 
 #$ DISCUSSION:
 
-#$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
+#$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ INCLUDE: presets/4.4/tune/defaults.txt
 
 set profile_name = Brcuda
@@ -54,6 +54,10 @@ set simplified_master_multiplier = 60
 set simplified_i_gain = 110
 set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 80
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
 
 #$ OPTION_GROUP BEGIN: Recommended RC Links
 
