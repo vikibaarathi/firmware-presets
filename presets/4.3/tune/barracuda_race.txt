@@ -34,6 +34,7 @@
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
+set profile_name = Brcuda
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 set p_pitch = 28
@@ -49,10 +50,6 @@ set i_yaw = 52
 set f_yaw = 57
 set d_min_roll = 17
 set d_min_pitch = 20
-set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 35
-set feedforward_jitter_factor = 4
-set feedforward_boost = 18
 set simplified_master_multiplier = 60
 set simplified_i_gain = 110
 set simplified_dmax_gain = 0
@@ -99,10 +96,8 @@ set simplified_feedforward_gain = 80
 
     set gyro_lpf1_static_hz = 350
     set gyro_lpf2_static_hz = 0
-    set dyn_notch_count = 1
-    set dyn_notch_q = 500
     set gyro_lpf1_dyn_min_hz = 350
     set gyro_lpf1_dyn_max_hz = 700
-    set simplified_gyro_filter_multiplier = 140
+
 
 #$ OPTION END
