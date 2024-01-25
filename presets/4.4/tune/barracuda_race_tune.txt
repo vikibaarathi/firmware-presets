@@ -17,8 +17,8 @@
 #$ DESCRIPTION: - Motor screws should be tight and arms should be solid and not gummy. 
 #$ DESCRIPTION: - Special thanks to testers Meor, Imad, Muqrie, AdilzFPV
 #$ DESCRIPTION: ### Recommendation:
-#$ DESCRIPTION: - ExpressLRS 250Hz or ExpressLRS 500Hz
 #$ DESCRIPTION: - Apply Barracuda filters
+#$ DESCRIPTION: - Apply RClink of ExpressLRS 250Hz or ExpressLRS 500Hz for racing
 #$ DESCRIPTION: ### BLHeli32 setting
 #$ DESCRIPTION: - Set low and high frequency to 48
 #$ DESCRIPTION: - Rampup power 25%
